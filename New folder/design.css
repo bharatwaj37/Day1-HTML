@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.b{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: circ 10s infinite;
+    position: relative;
+}
+
+@keyframes circ{
+    0%{
+       top: 0px;
+       left: 0px;
+       background-color: red;
+    }
+    25%{
+        top: 0px;
+        left: 500px;
+        background-color: orange;
+    }
+    50%{
+        top: 50px;
+       left: 500px;
+       background-color: green;
+    }
+    75%{
+        top: 50px;
+        left: 0px;
+        right: 500px;
+        background-color: springgreen;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: aquamarine;
+    }
+}
