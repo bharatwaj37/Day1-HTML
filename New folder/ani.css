@@ -14,19 +14,19 @@
 .heart{
     height: 70px;
     width: 70px;
-    background-color: transparent;
+    background-color: black;
     position: relative;
     transform: rotate(-45deg);
-    box-shadow: -10px 20px 90px red;
+    box-shadow: -10px 20px 90px yellow;
     animation: he 2s linear infinite;
-    left: 15%;
+    left: 0%;
     top: 2%;
     z-index: 1;
 }
 .heart::before{
   height: 70px;
   width: 70px;
-  background-color: transparent;
+  background-color: black;
   top: -50%;
   position: absolute;
   content: '';
@@ -35,7 +35,7 @@
 .heart::after{
   height: 70px;
   width: 70px;
-  background-color: transparent;
+  background-color: black;
   right: -50%;
   position: absolute;
   content: '';
@@ -59,7 +59,8 @@
   border-radius: 50%;
   border: 2px solid skyblue;
   animation: cir 2s linear infinite;
-  
+  position:absolute;
+  z-index: 3;
   
 }
 @keyframes cir {
@@ -70,5 +71,26 @@
     transform:rotate(360);
     background-color: skyblue;
     transition: 2s;
+    border: 2px solid orange;
+  } 
+}
+.square{
+  height: 500px;
+  width: 500px;
+  background-color: yellowgreen;
+  border: 2px solid skyblue;
+  animation: sq 2s linear infinite;
+  position:absolute;
+  
+}
+@keyframes sq{
+  from{
+    transform: square(-45deg);
+  }
+  to{
+    transform:square(360);
+    background-color: red;
+    transition: 2s;
+    border: 2px solid yellow;
   } 
 }
